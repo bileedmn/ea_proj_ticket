@@ -1,6 +1,7 @@
 package edu.mum.amqp;
 
 import edu.mum.entity.Ticket;
+import edu.mum.entity.TicketModel;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 
 
@@ -17,7 +18,7 @@ public class TicketServiceImpl implements TicketService {
         System.out.println("Sent.");
     }
 
-    public void publishTicket(RabbitTemplate rabbitTemplate, Ticket t) {
+    public void publishTicket(RabbitTemplate rabbitTemplate, TicketModel t) {
 
         System.out.println("Sending...");
         rabbitTemplate.convertAndSend("ticket.key", t);

@@ -1,11 +1,9 @@
 package edu.mum.dao;
 
+import edu.mum.entity.Flight;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Component;
 
-import edu.mum.entity.Ticket;
-
 @Component
-public interface TicketCRUD extends CrudRepository<Ticket, Long> {
-
+public interface FlightRepo extends CrudRepository<Flight, Long> {
 }
