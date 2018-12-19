@@ -13,16 +13,16 @@ public class Flight {
     private String flightNumber;
 
     @ManyToOne
-    @JoinColumn(name = "FROM_AIRPORT_ID")
+    @JoinColumn(name = "FROM_AIRPORT")
     Airport fromAirport;
 
     @ManyToOne
-    @JoinColumn(name = "TO_AIRPORT_ID")
+    @JoinColumn(name = "TO_AIRPORT")
     Airport toAirport;
 
-    @ManyToOne
-    @JoinColumn(name = "AIRLINE_ID")
-    private AirLine airline;
+//    @ManyToOne
+//    @JoinColumn(name = "AIRLINE_ID")
+//    private AirLine airline;
 
     public long getId() {
         return id;
@@ -56,11 +56,11 @@ public class Flight {
         this.toAirport = toAirport;
     }
 
-    public AirLine getAirline() {
-        return airline;
-    }
-
-    public void setAirline(AirLine airline) {
-        this.airline = airline;
-    }
+//    public AirLine getAirline() {
+//        return airline;
+//    }
+//
+//    public void setAirline(AirLine airline) {
+//        this.airline = airline;
+//    }
 }

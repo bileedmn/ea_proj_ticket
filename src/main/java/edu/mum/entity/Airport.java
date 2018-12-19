@@ -21,8 +21,8 @@ public class Airport {
     @Column
     private String city;
 
-    @Column
-    private String country;
+//    @Column
+//    private String country;
 
     public long getId() {
         return id;
@@ -56,11 +56,11 @@ public class Airport {
         this.city = city;
     }
 
-    public String getCountry() {
-        return country;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
+//    public String getCountry() {
+//        return country;
+//    }
+//
+//    public void setCountry(String country) {
+//        this.country = country;
+//    }
 }
