@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>edu.mum</groupId>
-    <artifactId>Ticket_Booker</artifactId>
+    <artifactId>ea_proj_ticket</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencyManagement>
         <dependencies>
