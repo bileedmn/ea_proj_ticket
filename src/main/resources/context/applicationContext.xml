@@ -47,7 +47,7 @@
     <jpa:repositories base-package="edu.mum.dao"/>
 
     <!-- Scan for  transaction-based resources -->
-    <context:component-scan base-package="edu.mum.*"/>
+    <context:component-scan base-package="edu.mum.controller,edu.mum.amqp,edu.mum.dao"/>
 
     <tx:annotation-driven transaction-manager="transactionManager"/>
 

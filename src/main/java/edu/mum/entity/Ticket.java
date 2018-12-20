@@ -14,7 +14,6 @@ public class Ticket {
 
     @Temporal(TemporalType.DATE)
     @Column
-    @NotEmpty
     private Date issuedDate;
 
     @ManyToOne
