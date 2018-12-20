@@ -36,11 +36,14 @@ public class TicketController {
 
         System.out.println("Mongolia...");
         RestTemplate restTemplate = new RestTemplate();
-        String res = restTemplate.postForObject("http://localhost:8081/ea_proj_ticket_war_exploded/ticket/process", new TicketModel(), String.class);
+        TicketModel tm = new TicketModel();
+        tm.setFlightId(1);
+        tm.setMemberId(1);
+        String res = restTemplate.postForObject("http://localhost:8081/ea_proj_ticket_war_exploded/ticket/process", tm, String.class);
         System.out.println("RESPONSE: "+res);
 
 
-        return "ok";
+        return "Ok - " + new Date().getTime();
     }
     
 
