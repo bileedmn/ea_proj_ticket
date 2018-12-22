@@ -25,3 +25,4 @@
                      routing-key="ticket.key" exchange="direct"/>
 
 </beans>
+
